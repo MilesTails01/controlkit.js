@@ -1,5 +1,8 @@
-var ControlKit        = require('./lib/ControlKit');
-	ControlKit.Canvas = require('./lib/component/Canvas');
-	ControlKit.SVG    = require('./lib/component/SVG');
+import ControlKit from './lib/ControlKit';
+import Canvas from './lib/component/Canvas';
+import SVG from './lib/component/SVG';
 
-module.exports = ControlKit;
+ControlKit.Canvas = Canvas;
+ControlKit.SVG = SVG;
+
+export default ControlKit;
